@@ -57,7 +57,9 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "fix": ".php-cs-fixer fix",
+        "check": "php-cs-fixer fix --dry-run --diff"
     },
     "conflict": {
         "symfony/symfony": "*"
